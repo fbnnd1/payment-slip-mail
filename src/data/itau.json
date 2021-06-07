@@ -1,0 +1,21 @@
+{
+    "codigoBanco": "341",
+    "nomeBanco": "Banco Itaú SA",
+    "localPagamento":"Pague preferencialmente no Itaú",
+    "instrucoes":"Sr. Caixa, por favor, cobrar acréscimo de R$ 1,50 referente a despesas com taxas bancárias mediante aprovação do sacado(não obrigatório).",
+    "beneficiario": {
+        "carteira":"110",
+        "conta":"12345-7",
+        "agencia": "0057",
+        "cnpj":"09.999.999/0001-15",
+        "nome":"Companhia de Fulano Ltda."
+    },
+    "pagador":{
+        "nome":"Ciclano Silva",
+        "cpf_cnpj":"123456789",
+        "recibo":"12345678",
+        "valor":"10,00",
+        "vencimento":"2021-07-30",
+        "numero_doc":"1"
+    }
+}
