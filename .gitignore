@@ -1,0 +1,11 @@
+#Bin directory
+./php
+
+#Test File
+test.php
+
+#Output directory
+./output
+
+#Samples directory
+./samples
