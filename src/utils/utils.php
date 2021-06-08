@@ -60,9 +60,15 @@ function create_text_file($str_file_name, $str_content) {
     $str_os = strtolower(php_uname("s"));
     $str_mode = "w";
 
+    if ( strpos($str_os, "windows" ) === false ) {
+        $str_mode .= "t";
+    }
+
+    /* Compatível com PHP 8 apenas
     if ( str_contains($str_os, "windows") == false) {
         $str_mode .= "t";
     }
+    */
 
     //$obj_file = fopen("../../output/" . $str_file_name, $str_mode);
     $obj_file = fopen("./output/" . $str_file_name, $str_mode);
