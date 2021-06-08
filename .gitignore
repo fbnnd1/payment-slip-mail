@@ -1,11 +1,12 @@
-#Bin directory
-./php
+#Bin directories
+php5/
+php8/
 
 #Test File
 test.php
 
 #Output directory
-./output
+output/
 
 #Samples directory
-./samples
+samples/
