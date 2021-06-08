@@ -1,6 +1,6 @@
 <?php
 
-//require("./src/utils/utils.php");
+require_once("./src/utils/utils.php");
 require("./src/interface/interfaces.php");
 require("PaymentSlip.php");
 
@@ -65,26 +65,23 @@ class ItauBankPaymentSlip extends PaymentSlip implements InterfaceBank {
         $str_html_template = str_replace("#REPR.CODBARRAS#", $this->create_graphic_represetantion_code_bar() , $str_html_template);
 
         if ($output) {
-            $str_html_structure_default = "
-            <!DOCTYPE html>
-            <html lang=\"pt-br\">
-            <head>
-                <meta charset=\"UTF-8\">
-                <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-                <title>Boleto</title>
-                <base href=\"../src/assets/\" />
-            </head>
-            <body>
-            #BOLETO#
-            </body>
+            $str_html_structure_default = "<!DOCTYPE html>\r\n
+            <html lang=\"pt-br\">\r\n
+            <head>\r\n
+                <meta charset=\"UTF-8\">\r\n
+                <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n
+                <title>Boleto</title>\r\n
+                <base href=\"../src/assets/\" />\r\n
+            </head>\r\n
+            <body>\r\n
+            #BOLETO#\r\n
+            </body>\r\n
             </html>
             ";
 
             $str_html_template = str_replace("#BOLETO#", $str_html_template, $str_html_structure_default);
-            //$obj_file = fopen("../../output/boleto.html", "wt");
-            $obj_file = fopen("./output/boleto.html", "wt");
-            fwrite($obj_file, $str_html_template);
-            fclose($obj_file);
+            
+            create_text_file("boleto.html", $str_html_template);
 
             return "";
          }

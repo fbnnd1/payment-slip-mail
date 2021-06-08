@@ -1,6 +1,6 @@
 <?php
 
-require("./src/utils/utils.php");
+require_once("./src/utils/utils.php");
 
 class PaymentSlip {
     protected $payment_code_bar;
