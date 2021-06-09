@@ -49,7 +49,7 @@ Código de barras|payment_code_bar|Numeração do boleto conforme à CNAB 240.
 Linha digitável|bar_code_line|Representação numérica do código de barras. Não de valor igual ao código de barras. Assemelha-se com:|34191.10100 99999.888888 33333.666666 1 44440000000000
 Campo livre|free_field|Parte da numeração do código de barra na qual a instituição financeira é livre para determinar como deve ser gerada.
 Número do documento|document_number|Número gerado pelo beneficiário no momento da emissão do boleto.
-Nosso Número|||Número de controle do beneficiário conforme leiaute estabelecido pelo banco.
+Nosso Número||Número de controle do beneficiário conforme leiaute estabelecido pelo banco.
 
 Como o sistema foi escrito, “codado”, tendo como base a língua inglesa, alguns termos em português brasileiro não tem tradução direta, por isso foram nomeados conforme abaixo:
 
@@ -736,7 +736,7 @@ Acessado em 05/06/21.
 
 **Manual da função fopen()**  
 
-Ator: Site PHP.net em português.  
+Autor: Site PHP.net em português.  
 Site: [https://www.php.net/manual/pt_BR/function.fopen.php]  
 Acessado em 07/06/21.  
 
