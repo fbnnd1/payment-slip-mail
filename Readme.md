@@ -630,9 +630,9 @@ O arquivo 'src/utils/utils.php' contém códigos de funções de utilidade geral
 
 <h2 id="ImplementacaoProjeto">Implementação do projeto</h2>
 
-Para usar o sistema em um computador com php instalado, recomenda-se usar um arquivo PHP dentro da 'src'.
+Para usar o projeto em um computador com php instalado, recomenda-se criar um arquivo PHP dentro da 'src'.
 
-Exemplo de implementação
+Exemplo de arquivo:
 
 ```php
 <?php
